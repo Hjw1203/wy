@@ -1,0 +1,212 @@
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+
+/*公共类*/
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.text-ov {
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	 white-space: nowrap;  /*超出不换行,超出部分... */
+}
+.text-ov1 {
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;  /* 两行，超出部分...  */
+}
+
+
+/* 主导航 */
+html,body {
+    background-color: #f6f6f6;
+    font-size: 14px;
+}
+header {
+    position: fixed;
+    width:100%;
+    top:0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+header a {
+    position: absolute;
+    width:20px;
+    height: 20px;
+    top:50%;
+    left:20px;
+    margin-top: -10px;
+    background: url('../images/back.png') no-repeat center;
+}
+header h1 {
+    font-size: 16px;
+}
+.main-nav ul {
+    margin:30px .1rem 0 .1rem;
+}
+.main-nav ul,.foot-nav ul {
+    font-size:0;
+}
+.main-nav ul a {
+    display: block;
+    height: 90px;
+    color: #000;
+    padding-top: 60px;
+}
+.main-nav li {
+    display: inline-block;
+    width:33.3%;
+    height: 90px;
+    font-size: 14px;
+    text-align:center;
+    background-color: #fff;
+    border-radius: 6px;
+    border-right:2px solid #f6f6f6;
+    border-bottom:2px solid #f6f6f6;
+}
+.foot-nav {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+}
+.foot-nav ul li {
+    display: inline-block;
+    width:33.3%;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+.foot-nav ul a {
+    display: block;
+    height: 50px;
+    padding-top: 30px;
+    color: #000;
+}
+.foot-nav ul .active a {
+    color: #e02f31;
+}
+.wdxq {
+    background: url('../images/wdxq.png') no-repeat center 7px;
+}
+.fw {
+    background: url('../images/fw.png') no-repeat center 7px;
+}
+.wd {
+    background: url('../images/wd.png') no-repeat center 7px;
+}
+.active.wdxq {
+    background: url('../images/wdxq1.png') no-repeat center 7px;
+}
+.active.fw {
+    background: url('../images/fw1.png') no-repeat center 7px;
+}
+.active.wd {
+    background: url('../images/wd1.png') no-repeat center 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 物业通知 */
+
+
+
+
+/* 物业介绍 */
+.article {
+    width:90%;
+    margin:0 auto;
+    margin-top: 70px;
+}
+.title {
+    font-size: 18px;
+    text-align: center;
+}
+.time {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* 我的 */
+.home-main .user {
+    width:80%;
+    margin:0 auto;
+    padding-top: 30px;
+}
+.home-main .user img{
+    width:80px;
+    height: 80px;
+}
+.home-main .user>div {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的小区</title>
+    <link rel="stylesheet" href="css/public.css">
+</head>
+
+<body>
+    <div class="home-main">
+        <div class="user clearfix">
+            <img src="images/u=1809914380,1026709839&fm=11&gp=0.jpg" alt="" class="fl">
+            <div class="fl">
+                <div>名称：社会我佩奇</div>
+                <div>电话：15112361236</div>
+            </div>
+        </div>
+        <ul class='items'>
+            <li>我的订单</li>
+            <li>关于</li>
+            <li>我的</li>
+        </ul>
+    </div>
+    <div class="foot-nav">
+        <ul>
+            <li class="wdxq">
+                <a href="index.html">我的小区</a>
+            </li>
+            <li class="fw">
+                <a href="service.html">服务</a>
+            </li>
+            <li class="wd">
+                <a href="home.html">我的</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src='js/jQuery.min.js'></script>
+<script>
+    $(".wd").addClass('active').siblings('li').removeClass('active');
+</script>
