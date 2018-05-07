@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,22 @@
 <body>
     <header>
         <a href=""></a>
-        <h1>投诉建议</h1>
+        <h1>订单详情</h1>
     </header>
+    <ul class="order-detail">
+        <li>服务项目：下水道疏通</li>
+        <li>服务时间：2018-05-01</li>
+        <li>其他说明：暂无</li>
+        <li>服务人员：贾师傅</li>
+        <li>服务费用：2.2</li>
+    </ul>
 </body>
 
 </html>
 <script src='js/jQuery.min.js'></script>
 <script>
-    $(".wdxq").addClass('active').siblings('li').removeClass('active')
+    $(".wdxq").addClass('active').siblings('li').removeClass('active');
+    $('.nav li').click(function(){
+        $(this).addClass('on').siblings('li').removeClass('on');
+    })
 </script>

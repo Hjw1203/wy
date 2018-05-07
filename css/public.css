@@ -49,6 +49,10 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 
 
+.swiper-container {
+    width:100%;
+    height: 150px;
+}
 /* 主导航 */
 html,body {
     background-color: #f6f6f6;
@@ -76,7 +80,7 @@ header h1 {
     font-size: 16px;
 }
 .main-nav ul {
-    margin:30px .1rem 0 .1rem;
+    margin:20px .1rem 0 .1rem;
 }
 .main-nav ul,.foot-nav ul {
     font-size:0;
@@ -141,25 +145,63 @@ header h1 {
 }
 
 
+/* 我的小区 */
+.wy-message {
+    background: url('../images/tz.png') no-repeat center 20px;
+}
+.js {
+    background: url('../images/js.png') no-repeat center 20px;
+}
+.phone {
+    background: url('../images/phone.png') no-repeat center 20px;
+}
+.kd {
+    background: url('../images/kd.png') no-repeat center 20px;
+}
+.news {
+    background: url('../images/news.png') no-repeat center 20px;
+}
+.zp {
+    background: url('../images/zp.png') no-repeat center 20px;
+}
+.yh {
+    background: url('../images/yh.png') no-repeat center 20px;
+}
+.jy {
+    background: url('../images/jy.png') no-repeat center 20px;
+}
+.bm {
+    background: url('../images/fw0.png') no-repeat center 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 服务 */
+.jd {
+    background: url('../images/jd.png') no-repeat center 20px;  
+}
+.qx {
+    background: url('../images/qj.png') no-repeat center 20px;
+}
+.st {
+    background: url('../images/gd.png') no-repeat center 20px;
+}
+.wx {
+    background: url('../images/sd.png') no-repeat center 20px;
+}
+.ps {
+    background: url('../images/ps.png') no-repeat center 20px;
+}
+.internet {
+    background: url('../images/internet.png') no-repeat center 20px;
+}
+.com {
+    background: url('../images/dn.png') no-repeat center 20px;
+}
+.jk {
+    background: url('../images/jk.png') no-repeat center 20px;
+}
+.bj {
+    background: url('../images/bj.png') no-repeat center 20px;
+}
 
 
 
@@ -167,15 +209,62 @@ header h1 {
 
 
 /* 物业通知 */
+.msg {
+    margin:70px 10px  0 10px;
+    padding-bottom: 100px;    
+}
+.msg li {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.msg li a {
+    color: #666;
+}
+.msg .msg-title {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000;
+}
+.msg .keywords {
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.msg .qb {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-
-
-
+/* 物业通知详情 */
+.msg-article .title {
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+}
+.msg-article .time {
+    color:#666;
+}
+.msg-article .content {
+    line-height: 30px;
+    margin-top: 30px;
+}
 /* 物业介绍 */
 .article {
-    width:90%;
-    margin:0 auto;
-    margin-top: 70px;
+    height: 100%;
+    padding:0 10px;
+    background-color: #fff;
+    padding-bottom: 100px;
 }
 .title {
     font-size: 18px;
@@ -185,7 +274,23 @@ header h1 {
     text-align: center;
 }
 
-
+/* 便民电话 */
+.list-box {
+    margin-top:70px;
+    padding: 0 10px; 
+}
+.phone-list {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.phone-list a {
+    color: #000;
+}
+.phone-list td,.phone-list th {
+    height: 30px;
+    border:1px solid #ddd;
+}
 
 
 
@@ -196,17 +301,79 @@ header h1 {
 
 /* 我的 */
 .home-main .user {
-    width:80%;
-    margin:0 auto;
-    padding-top: 30px;
+    padding: 30px 0 30px 50px;
+    background-color: #e02f31;
+    color: #fff;
 }
 .home-main .user img{
     width:80px;
     height: 80px;
+    border-radius: 50%;
 }
 .home-main .user>div {
     height: 40px;
     line-height: 40px;
-    padding-left: 20px;
     font-size: 14px;
+    margin-left: 30px;
+}
+.items {
+    margin-top:30px;
+    background-color: #fff;
+}
+.items li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 40px;
+    background: url('../images/right.png') no-repeat 97% center;
+}
+.items li a {
+    display: block;
+    color:#000;
+}
+.items .order {
+    background: url('../images/order.png') no-repeat 10px center;
+}
+
+/* 我的订单 */
+.nav {
+    margin-top: 70px;
+    background-color: #fff;
+    height: 42px;
+    line-height:40px;
+    overflow: hidden;
+}
+.nav li {
+    float: left;
+    width:33.3%;
+    text-align: center;
+}
+.nav li.on {
+    border-bottom: 2px solid #e02f31;
+    color: #e02f31;
+}
+.orders {
+    background-color: #fff;
+}
+.orders li {
+    border-top:1px solid #ddd;
+    padding:0 60px 0 10px;
+    background: url('../images/right.png') no-repeat 97% center;
+}
+.orders .order-name, .orders .info{
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/* 订单详情 */
+.order-detail {
+    margin-top: 70px;
+    background-color: #fff;
+}
+.order-detail li {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 20px;
 }

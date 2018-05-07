@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的小区</title>
+    <link rel="stylesheet" href="css/public.css">
+    <script src='js/common.js'></script>
+</head>
+
+<body>
+    <header>
+        <a href=""></a>
+        <h1>我的订单</h1>
+    </header>
+    <ul class='nav'>
+        <li class="on">处理中</li>
+        <li>待处理</li>
+        <li>已完成</li>
+    </ul>
+    <ul class="orders">
+        <li>
+            <a href="orderDetail.html">
+            <div class="order-name">水电维修</div> 
+                <div class="info clearfix">
+                    <span class="fl">2018-05-02</span>
+                    <span class="fr">服务人：小李</span>
+                </div>                
+            </a>
+        </li>
+        <li>
+            <a href="orderDetail.html">
+            <div class="order-name">水电维修</div> 
+                <div class="info clearfix">
+                    <span class="fl">2018-05-02</span>
+                    <span class="fr">服务人：小李</span>
+                </div>                
+            </a>
+        </li>
+        <li>
+            <a href="orderDetail.html">
+                <div class="order-name">水电维修</div> 
+                    <div class="info clearfix">
+                        <span class="fl">2018-05-02</span>
+                        <span class="fr">服务人：小李</span>
+                    </div>                
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
+<script src='js/jQuery.min.js'></script>
+<script>
+    $(".wdxq").addClass('active').siblings('li').removeClass('active');
+    $('.nav li').click(function(){
+        $(this).addClass('on').siblings('li').removeClass('on');
+    })
+</script>

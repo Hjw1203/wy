@@ -6,37 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的小区</title>
     <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
     <script src='js/common.js'></script>
 </head>
 <body>
-    <div class="main-nav">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+        </div>
+        <div class="main-nav">
         <ul>
-            <li>
+            <li class="wy-message">
                 <a href="notice.html">物业通知</a>
             </li>
-            <li>
+            <li class="js">
                 <a href="descriptions.html">物业介绍</a>
             </li>
-            <li>
-                <a href="">便民电话</a>
+            <li class="phone">
+                <a href="phoneList.html">便民电话</a>
             </li>
-            <li>
-                <a href="">快递上门</a>
+            <li class="kd">
+                <a href="kd.html">快递上门</a>
             </li>
-            <li>
-                <a href="">本地新闻</a>
+            <li class="news">
+                <a href="news.html">本地新闻</a>
             </li>
-            <li>
+            <li class="zp">
                 <a href="">本地招聘</a>
             </li>
-            <li>
-                <a href="">本地优惠</a>
+            <li class="yh">
+                <a href="favourable.html">本地优惠</a>
             </li>
-            <li>
-                <a href="">投诉建议</a>
+            <li class="jy">
+                <a href="advice.html">投诉建议</a>
             </li>
-            <li>
-                <a href="">便民服务</a>
+            <li class="bm">
+                <a href="convenientService.html">便民服务</a>
             </li>
         </ul>
     </div>
@@ -56,6 +66,16 @@
 </body>
 </html>
 <script src='js/jQuery.min.js'></script>
+<script src='js/swiper-4.2.2.min.js'></script>
 <script>
-    $(".wdxq").addClass('active').siblings('li').removeClass('active')
+    $(function(){
+        $(".wdxq").addClass('active').siblings('li').removeClass('active');
+        var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,       
+        // 如果需要分页器
+        pagination: {
+        el: '.swiper-pagination',
+        },
+    })        
+})
 </script>
