@@ -53,9 +53,17 @@ html,body {
 }
 
 
-.swiper-container {
+.swiper-container,.swiper-container img {
     width:100%;
-    height: 1.5rem;
+    height: 1.8rem;
+}
+
+/* 注册 */
+.area  select {
+    width:39%;
+}
+.community select {
+    width:80%;
 }
 /* 主导航 */
 html,body {
@@ -172,9 +180,6 @@ header h1 {
 .yh {
     background: url('../images/yh.png') no-repeat center 20px;
 }
-.jy {
-    background: url('../images/jy.png') no-repeat center 20px;
-}
 .bm {
     background: url('../images/fw0.png') no-repeat center 20px;
 }
@@ -278,23 +283,41 @@ header h1 {
 .time {
     text-align: center;
 }
-
+.article .content {
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.article .content img {
+    display: block;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
 /* 便民电话 */
 .list-box {
-    margin-top:70px;
-    padding: 0 10px; 
+    margin-top:50px;
+}
+.list-box>div {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 25px;
+    color: #e02f31;
 }
 .phone-list {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    background-color: #fff;
 }
 .phone-list a {
     color: #000;
 }
 .phone-list td,.phone-list th {
-    height: 30px;
-    border:1px solid #ddd;
+    height:40px;
+    border-bottom:1px solid #ddd;
+}
+.phone-list tr td:first-child {
+    background: url('../images/phone1.png') no-repeat 20px center;
 }
 
 /* 投诉建议 */
@@ -324,7 +347,83 @@ header h1 {
     color: #fff;
     margin-top: .3rem;
 }
-/* 便民服务 */
+.bdzp select {
+    position: absolute;
+    top:10px;
+    right:10px;
+    width:80px;
+    height: 30px;
+    border:none;
+    outline:none;
+}
+/* 本地招聘 */
+.zp-main {
+    margin-top: 70px;
+    height: 35px;
+    line-height: 35px;
+}
+.zp-title span {
+    display: inline-block;
+    width:35px;
+    height: 20px;
+    background-color: #e02f31;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.zp-keywords {
+    line-height: 25px;
+    text-indent: 2em;
+}
+.zp-main li {
+    background-color: #fff;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.zp-main a {
+    color:#000;
+}
+
+/* 本地优惠 */
+.yh-main {
+    margin-top: 70px;
+}
+.yh-main li {
+    background-color: #fff;
+    padding:0 10px 30px 10px;
+}
+.yh-main li a {
+    color: #000;
+}
+.yh-main li div {
+    text-align: justify;
+    line-height: 25px;
+}
+.yh-main li h3 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.yh-main img {
+    width:80%;
+    display: block;
+    margin:0 auto;
+}
+
+/* 服务种类选择 */
+.check-main {
+    padding-top: 50px;
+}
+.check-main>div {
+    height:40px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: #e02f31;
+}
+/* 服务订单填写 */
 .service-form {
     padding-top: 70px;
     margin:0 10px 0 50px;
@@ -347,7 +446,8 @@ li.service-bz {
 .service-bz span {
     vertical-align: top;
 }
-.sub {
+.sub,.pay {
+    display: block;
     width:70%;
     margin:0 auto;
     height: 40px;
@@ -358,16 +458,55 @@ li.service-bz {
     text-align: center;
 }
 
-/* 服务种类选择 */
-.check-main {
-    padding-top: 70px;
-}
-/* 服务-订单填写 */
-.dq select {
-    width:71%;
-}
 
-
+/* 确认订单 */
+.pay {
+    margin-top: 60px;
+}
+.shade {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: none;
+}
+.confirm {
+    position: absolute;
+    width:2.5rem;
+    height: 1rem;
+    top:50%;
+    left:50%;
+    margin-top: -.5rem;
+    margin-left: -1.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.confirm h2 {
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: 18px;
+}
+.confirm .action {
+    height: .4rem;
+    font-size: 0;
+    margin-top: .1rem;
+    border-top: 1px solid #e02f31;
+}
+.confirm .action button {
+    width:50%;
+    border:none;
+    outline:none;
+    height: .4rem;
+    color: #e02f31;
+    font-size: 16px;
+    background-color: transparent;
+}
+.confirm .action .sure {
+    border-right: 1px solid #e02f31;
+}
 
 /* 我的 */
 .home-main .user {
@@ -390,6 +529,9 @@ li.service-bz {
     margin-top:30px;
     background-color: #fff;
 }
+.items1 {
+    margin-top: 0;
+}
 .items li {
     height: .45rem;
     line-height: .45rem;
@@ -397,12 +539,21 @@ li.service-bz {
     padding-left: 40px;
     background: url('../images/right.png') no-repeat 97% center;
 }
+.items1 li {
+    background: url('../images/wx.png') no-repeat 10px center,url('../images/right.png') no-repeat 97% center;
+}
 .items li a {
     display: block;
     color:#000;
 }
 .items .order {
-    background: url('../images/order.png') no-repeat 10px center;
+    background: url('../images/order.png') no-repeat 10px center,url('../images/right.png') no-repeat 97% center;
+}
+.items .jy {
+    background: url('../images/jy.png') no-repeat 10px center,url('../images/right.png') no-repeat 97% center;
+}
+.express li {
+    background: url('../images/express.png') no-repeat 10px center,url('../images/right.png') no-repeat 97% center;
 }
 
 /* 我的订单 */
@@ -452,4 +603,15 @@ li.service-bz {
 }
 .orders .status {
     color: #e02f31;
+}
+.confirmOrder {
+    display: block;
+    width:70%;
+    margin:0 auto;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e02f31;
+    color: #fff;
+    margin-top: .3rem; 
+    text-align: center;
 }

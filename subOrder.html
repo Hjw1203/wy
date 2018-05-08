@@ -13,7 +13,7 @@
 <body>
     <header>
         <a href="javascript:history.go(-1)"></a>
-        <h1>订单详情</h1>
+        <h1>订单确认</h1>
     </header>
     <ul class="order-detail">
         <li>服务项目：下水道疏通</li>
@@ -22,14 +22,29 @@
         <li>服务人员：贾师傅</li>
         <li>服务费用：2.2</li>
     </ul>
-    <div class="confirmOrder">确认订单</div>
+    <div class="pay">支付</div>
+    <div class="shade">
+        <div class="confirm">
+            <h2>是否确认支付？</h2>
+            <div class="action">
+                <button class="sure">确认</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
 <script src='js/jQuery.min.js'></script>
 <script>
     $(".wdxq").addClass('active').siblings('li').removeClass('active');
-    $('.nav li').click(function(){
-        $(this).addClass('on').siblings('li').removeClass('on');
+    $('.pay').click(function(){         //点击支付弹出框
+        $('.shade').show();
     })
+    $('.sure').click(function(){        //点击确认
+        $('.shade').hide();
+    })
+    $('.cancel').click(function(){        //点击取消
+        $('.shade').hide();
+    })   
 </script>

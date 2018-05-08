@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的小区</title>
+    <link rel="stylesheet" href="css/public.css">
+    <script src='js/common.js'></script>
+</head>
+
+<body>
+    <header class="bdzp">
+        <a href="javascript:history.go(-1)"></a>
+        <h1>本地招聘</h1>
+        <select name="" id="">
+            <option value="">全部</option>
+        </select>
+    </header>
+    <div class="zp-main">
+        <ul>
+            <li>
+                <a href="zpDetail.html">
+                    <div class="zp-title">
+                        <span>招聘</span>行政司机。
+                    </div>
+                    <div class="zp-keywords">根据公司的用车安排完成指定任务，责任车辆的日常清洁维护和保养等工作；协助办理公司车辆保险、年检等工作...</div>
+                    <div class="clearfix">
+                        <span class="time fl">2018-05-22</span>
+                        <span class="time fr">所属分类：司机</span>
+                    </div>                    
+                </a>
+            </li>
+            <li>
+                <a href="zpDetail.html">
+                    <div class="zp-title">
+                        <span>招聘</span>高档公司会所保洁。
+                    </div>
+                    <div class="zp-keywords">负责所分配区域的卫生清洁工，保证按质按量的完成所分配的任务，听从分配和安排。</div>
+                    <div class="clearfix">
+                        <span class="time fl">2018-05-22</span>
+                        <span class="time fr">所属分类：保洁</span>
+                    </div>                    
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src='js/jQuery.min.js'></script>
+<script>
+    $(".wdxq").addClass('active').siblings('li').removeClass('active')
+</script>
