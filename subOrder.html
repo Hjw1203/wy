@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的小区</title>
+    <link rel="stylesheet" href="css/public.css">
+    <script src='js/common.js'></script>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:history.go(-1)"></a>
+        <h1>订单确认</h1>
+    </header>
+    <ul class="order-detail">
+        <li>服务项目：下水道疏通</li>
+        <li>服务时间：2018-05-01</li>
+        <li>其他说明：暂无</li>
+        <li>服务人员：贾师傅</li>
+        <li>服务费用：2.2</li>
+    </ul>
+    <div class="pay">支付</div>
+    <div class="shade">
+        <div class="confirm">
+            <h2>是否确认支付？</h2>
+            <div class="action">
+                <button class="sure">确认</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src='js/jQuery.min.js'></script>
+<script>
+    $(".wdxq").addClass('active').siblings('li').removeClass('active');
+    $('.pay').click(function(){         //点击支付弹出框
+        $('.shade').show();
+    })
+    $('.sure').click(function(){        //点击确认
+        $('.shade').hide();
+    })
+    $('.cancel').click(function(){        //点击取消
+        $('.shade').hide();
+    })   
+</script>
