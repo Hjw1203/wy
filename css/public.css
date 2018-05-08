@@ -17,6 +17,10 @@ button, input, select, textarea { font-size:100%; }
 table { border-collapse:collapse; border-spacing:0; }
 
 /*公共类*/
+html,body {
+    width:100%;
+    height: 100%;;
+}
 .fl {
     float: left
 }
@@ -51,7 +55,7 @@ table { border-collapse:collapse; border-spacing:0; }
 
 .swiper-container {
     width:100%;
-    height: 150px;
+    height: 1.5rem;
 }
 /* 主导航 */
 html,body {
@@ -66,6 +70,7 @@ header {
     line-height: 50px;
     text-align: center;
     background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 header a {
     position: absolute;
@@ -80,21 +85,21 @@ header h1 {
     font-size: 16px;
 }
 .main-nav ul {
-    margin:20px .1rem 0 .1rem;
+    margin:.2rem .1rem 0 .1rem;
 }
 .main-nav ul,.foot-nav ul {
     font-size:0;
 }
 .main-nav ul a {
     display: block;
-    height: 90px;
+    height: .9rem;
     color: #000;
-    padding-top: 60px;
+    padding-top: .65rem;
 }
 .main-nav li {
     display: inline-block;
     width:33.3%;
-    height: 90px;
+    height: .9rem;
     font-size: 14px;
     text-align:center;
     background-color: #fff;
@@ -264,7 +269,7 @@ header h1 {
     height: 100%;
     padding:0 10px;
     background-color: #fff;
-    padding-bottom: 100px;
+    padding-top: 70px;
 }
 .title {
     font-size: 18px;
@@ -292,10 +297,75 @@ header h1 {
     border:1px solid #ddd;
 }
 
+/* 投诉建议 */
+.advice-form {
+    padding-top: 70px;
+    text-align: center;
+}
+.advice-form p {
+    padding-left: 20px;
+    text-align: left;
+    height: 35px;
+    line-height: 35px;
+}
+.advice-form textarea {
+    width:95%;
+    margin:0 auto;
+    resize: none;
+    padding:10px;
+    outline: none;
+}
+.advice-form div {
+    width:70%;
+    margin:0 auto;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e02f31;
+    color: #fff;
+    margin-top: .3rem;
+}
+/* 便民服务 */
+.service-form {
+    padding-top: 70px;
+    margin:0 10px 0 50px;
+}
+.service-form li {
+    height:50px;
+    line-height: .5rem;
+}
+.service-form input {
+    width:80%;
+    height: 30px;
+}
+.service-form textarea {
+    width:80%;
+    resize: none;
+}
+li.service-bz {
+    height: auto;
+}
+.service-bz span {
+    vertical-align: top;
+}
+.sub {
+    width:70%;
+    margin:0 auto;
+    height: 40px;
+    line-height: 40px;
+    background-color: #e02f31;
+    color: #fff;
+    margin-top: .3rem; 
+    text-align: center;
+}
 
-
-
-
+/* 服务种类选择 */
+.check-main {
+    padding-top: 70px;
+}
+/* 服务-订单填写 */
+.dq select {
+    width:71%;
+}
 
 
 
@@ -321,8 +391,8 @@ header h1 {
     background-color: #fff;
 }
 .items li {
-    height: 35px;
-    line-height: 35px;
+    height: .45rem;
+    line-height: .45rem;
     border-bottom: 1px solid #ddd;
     padding-left: 40px;
     background: url('../images/right.png') no-repeat 97% center;
@@ -376,4 +446,10 @@ header h1 {
     line-height: 45px;
     border-bottom: 1px solid #ddd;
     padding-left: 20px;
+}
+.orders a {
+    color: #000;
+}
+.orders .status {
+    color: #e02f31;
 }
